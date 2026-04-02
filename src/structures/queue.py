@@ -1,4 +1,4 @@
-from linked_list import Node 
+from network.node import Node 
 
 class Queue:
     def __init__(self):
