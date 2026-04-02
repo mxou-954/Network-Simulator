@@ -1,4 +1,3 @@
-print("HELLO")
 from network.network import Network
 from network.packet import Packet
 from network.router import Router

@@ -41,6 +41,9 @@ class Network:
             if router is None:
                 print("Routeur introuvable")
                 return
+            elif router.is_active is False:
+                print("Le routeur a subi des domages")
+                return
 
             next_ip = router.get_next_hop(packet.destination)
             if next_ip is None:
@@ -58,4 +61,4 @@ class Network:
             complete_path.append(iter)
 
         complete_path.reverse()
-        print(" → ".join(complete_path))
+        return complete_path

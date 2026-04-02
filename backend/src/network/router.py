@@ -6,6 +6,7 @@ class Router:
         self.name = name
         self.ip_address = ip_address
         self.routing_table = RoutingTable()
+        self.is_active = True
 
     def __str__(self):
         return f"{self.name} ({self.ip_address})"
